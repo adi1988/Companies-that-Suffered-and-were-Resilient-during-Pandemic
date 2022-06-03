@@ -76,3 +76,7 @@ AVG(Profits_2021) Average_Profits_2021, AVG(Profits_2020) Average_Profits_2020, 
 from dbo.vw_Profit
 group by Type_of_Industry
 having count(Type_of_Industry) >1
+
+
+POWER BI - 
+To view the visualization dashboard go to Companies that Suffered and Prospered and open raw file. You must have PowerBI downloaded to view this
