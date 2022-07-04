@@ -1,4 +1,4 @@
-# Companies that Suffered and Prospered in the Pandemic -Fortune-1000-companies-from-2018-2021
+# Companies that Suffered and were Resilient to the Pandemic -Fortune-1000-companies-from-2018-2021
 Fortune 1000 data was collected (source given in readme), cleaned in Excel, Grouped in SQL and visualized in PowerBI
 
 EXCEL - 
@@ -80,3 +80,6 @@ having count(Type_of_Industry) >1
 
 POWER BI - 
 To view the visualization dashboard go to Companies that Suffered and Prospered and open raw file. You must have PowerBI downloaded to view this
+
+PDF -
+A pdf version of the different visualizations is also put to easily read (however this is not in interactive version)
