@@ -14,6 +14,7 @@ Unique ID coloumn was created as "Company Name""Type of Industry" so as to be ab
 use Fortune1000
 -- To find the count of the different type of industries for each year, around 233 rows are present in all, certain mismatch
 -- due to certain companies in 2018,2019 being acquired and dropped and certain new ones added in 2021
+
 select count(distinct(type_of_industry)) from dbo.Year_2021
 select count(distinct(type_of_industry)) from dbo.Year_2020
 select count(distinct(type_of_industry)) from dbo.Year_2019
