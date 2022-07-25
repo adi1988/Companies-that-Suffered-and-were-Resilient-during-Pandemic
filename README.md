@@ -53,9 +53,11 @@ count queries for both these show that there are 821 records, this means that fr
 out of 1000, ~179 companies have discrepancy as some could have been acquired and merged since 2018,2019 and some could have formed new in 2021
 
 
--- grouping the different companies by type of industry and how many companies fit under these
+grouping the different companies by type of industry and how many companies fit under these
 
--- Also removed industry only having a single company to avoid skewed results
+Also removed industry only having a single company to avoid skewed results
+
+
 
 
 select Type_of_industry,count(type_of_industry) as Industry from vw_all
@@ -66,11 +68,13 @@ having count(type_of_industry) = '1'
 
 
 
+
 select Type_of_industry,count(type_of_industry) as Industry from vw_all
 
 group by Type_of_Industry
 
 having count(type_of_industry) > '1'
+
 
 
 
