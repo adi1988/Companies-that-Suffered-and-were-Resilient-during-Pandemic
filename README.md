@@ -20,7 +20,7 @@ select count(distinct(type_of_industry)) from dbo.Year_2019
 select count(distinct(type_of_industry)) from dbo.Year_2018
 
 
--- Creating Views for all years with headcount, profit, assets in one single table
+-- Creating View for all years with headcount, profit, assets in one single dataset
 
 create view vw_all as (select a.Company_Name,a.Type_of_Industry,a.Number_of_Employees Headcount_2021,b.Number_of_Employees Headcount_2020 ,
 c.Number_of_Employees Headcount_2019,d.Number_of_Employees Headcount_2018,a.Profits Profits_2021,b.Profits Profits_2020 ,
@@ -36,18 +36,12 @@ select Type_of_industry,count(type_of_industry) as Industry from vw_all
 group by Type_of_Industry
 having count(type_of_industry) = '1'
 
--- count query for not equal to one show no results for both queries showing no duplicates in both views created
-
-select Type_of_industry,count(type_of_industry) as Industry from vw_all
-group by Type_of_Industry
-having count(type_of_industry) != '1'
-
 -- grouping the different companies by type of industry and how many companies fit under these
 -- Also removed industry only having a single company to avoid skewed results
 
-select type_of_industry, count(Type_of_Industry) from dbo.vw_Profit
+select Type_of_industry,count(type_of_industry) as Industry from vw_all
 group by Type_of_Industry
-having count(Type_of_Industry) > '1'
+having count(type_of_industry) > '1'
 
 
 POWER BI - 
