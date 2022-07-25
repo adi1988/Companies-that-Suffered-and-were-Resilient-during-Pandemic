@@ -27,10 +27,24 @@ select count(distinct(type_of_industry)) from dbo.Year_2018
 
 ## Creating View for all years with headcount, profit, assets in one single dataset
 
-create view vw_all as (select a.Company_Name,a.Type_of_Industry,a.Number_of_Employees Headcount_2021,b.Number_of_Employees Headcount_2020 ,
-c.Number_of_Employees Headcount_2019,d.Number_of_Employees Headcount_2018,a.Profits Profits_2021,b.Profits Profits_2020 ,
-c.Profits Profits_2019,d.Profits Profits_2018, a.Assets Assets_2021,b.Assets Assets_2020,c.Assets Assets_2019,d.Assets Assets_2018 
+create view vw_all as 
+
+(select a.Company_Name,a.Type_of_Industry,
+
+a.Number_of_Employees Headcount_2021,b.Number_of_Employees Headcount_2020 ,
+
+c.Number_of_Employees Headcount_2019,d.Number_of_Employees Headcount_2018,
+
+a.Profits Profits_2021,b.Profits Profits_2020 ,
+
+c.Profits Profits_2019,d.Profits Profits_2018, 
+
+a.Assets Assets_2021,b.Assets Assets_2020,
+
+c.Assets Assets_2019,d.Assets Assets_2018 
+
 from dbo.Year_2021 a,dbo.Year_2020 b,dbo.Year_2019 c,dbo.Year_2018 d
+
 where a.Unique_ID=b.Unique_ID and b.Unique_ID=c.Unique_ID and b.Unique_ID=d.Unique_ID)
 
 
@@ -45,17 +59,25 @@ out of 1000, ~179 companies have discrepancy as some could have been acquired an
 
 
 select Type_of_industry,count(type_of_industry) as Industry from vw_all
+
 group by Type_of_Industry
+
 having count(type_of_industry) = '1'
 
+
+
 select Type_of_industry,count(type_of_industry) as Industry from vw_all
+
 group by Type_of_Industry
+
 having count(type_of_industry) > '1'
+
 
 
 
 # POWER BI - 
 To view the visualization dashboard go to Companies that Suffered and Prospered and open raw file. You must have PowerBI downloaded to view this
+
 
 # PDF -
 A pdf version of the different visualizations is also put to easily read (however this is not in interactive version)
