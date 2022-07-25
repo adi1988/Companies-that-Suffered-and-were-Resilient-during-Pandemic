@@ -1,7 +1,7 @@
 # Companies that Suffered and were Resilient to the Pandemic -Fortune-1000-companies-from-2018-2021
 Fortune 1000 data was collected (source given in readme), cleaned in Excel, Grouped in SQL and visualized in PowerBI
 
-EXCEL - 
+# EXCEL - 
 Used 
 https://www.someka.net/excel-template/fortune-1000-excel-list/ (given in File as 2020 Fortune 1000 Companies_by Industry)
 as Source for the years 2018-2021 and downloaded these as excel sheets before compiling them onto a single excel sheet and cleaning them
@@ -9,7 +9,7 @@ Additional details such as type of industries were integrated into the compiled 
 Unique ID coloumn was created as "Company Name""Type of Industry" so as to be able to join later in SQL
 
 
-SQL Server - 
+# SQL Server - 
 
 use Fortune1000
 -- To find the count of the different type of industries for each year, around 233 rows are present in all, certain mismatch
@@ -44,8 +44,8 @@ group by Type_of_Industry
 having count(type_of_industry) > '1'
 
 
-POWER BI - 
+# POWER BI - 
 To view the visualization dashboard go to Companies that Suffered and Prospered and open raw file. You must have PowerBI downloaded to view this
 
-PDF -
+# PDF -
 A pdf version of the different visualizations is also put to easily read (however this is not in interactive version)
