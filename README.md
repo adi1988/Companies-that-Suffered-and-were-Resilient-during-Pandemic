@@ -28,7 +28,7 @@ c.Profits Profits_2019,d.Profits Profits_2018, a.Assets Assets_2021,b.Assets Ass
 from dbo.Year_2021 a,dbo.Year_2020 b,dbo.Year_2019 c,dbo.Year_2018 d
 where a.Unique_ID=b.Unique_ID and b.Unique_ID=c.Unique_ID and b.Unique_ID=d.Unique_ID)
 
--- count queries for both these show that there are 821 records showing 1 coloumn, this means that from 2018-2021 there are 821 records which are recurring
+-- count queries for both these show that there are 821 records, this means that from 2018-2021 there are 821 records which are recurring
 -- out of 1000, ~179 companies have discrepancy as some could have been acquired and merged since 2018,2019 and some could have formed new in 2021 we will query these
 -- later with left and right join
 
