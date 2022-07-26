@@ -100,7 +100,7 @@ having count(type_of_industry) > '1'
 
 # POWER BI - 
 To view the visualization dashboard go to Companies that Suffered and Prospered and open raw file. You must have PowerBI downloaded to view this
-
+https://github.com/adi1988/Winners-and-Losers-Fortune-1000-companies-from-2018-2021/blob/main/Fortune%201000_2018-2021companies%20data.xlsx
 
 # PDF -
 A pdf version of the different visualizations is also put to easily read (however this is not in interactive version)
