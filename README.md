@@ -25,7 +25,7 @@ select count(distinct(type_of_industry)) from dbo.Year_2019
 select count(distinct(type_of_industry)) from dbo.Year_2018
 
 
-## Creating View for all years with headcount, profit, assets in one single dataset
+## Creating View for all years 2018-2021 along with headcount, profit, profit change, assets, revenue, revenue change and percentage profits in one single dataset
 
 create view vw_all as 
 
@@ -51,7 +51,11 @@ a.Revenues Revenues_2021,b.Revenues Revenues_2020,c.Revenues Revenues_2019,d.Rev
 
 (a.Revenue_Change x 100) Percentage_Revenue_Change_2021, (b.Revenue_Change x 100) Percentage_Revenue_Change_2020,
 
-(c.Revenue_Change x 100) Percentage_Revenue_Change_2019, (d.Revenue_Change x 100) Percentage_Revenue_Change_2018
+(c.Revenue_Change x 100) Percentage_Revenue_Change_2019, (d.Revenue_Change x 100) Percentage_Revenue_Change_2018,
+
+((a.Profits/a.Revenues) x 100) Percentage_Profits_2021, ((b.Profits/b.Revenues) x 100) Percentage_Profits_2020,
+
+((c.Profits/c.Revenues) x 100) Percentage_Profits_2019, ((d.Profits/d.Revenues) x 100) Percentage_Profits_2018
 
 from dbo.Year_2021 a,dbo.Year_2020 b,dbo.Year_2019 c,dbo.Year_2018 d
 
