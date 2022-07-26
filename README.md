@@ -11,7 +11,7 @@ Unique ID coloumn was created as "Company Name""Type of Industry" so as to be ab
 
 # SQL Server - 
 
-## use Fortune1000
+# use Fortune1000
 -- To find the count of the different type of industries for each year, around 233 rows are present in all, certain mismatch
 -- due to certain companies in 2018,2019 being acquired and dropped and certain new ones added in 2021
 
@@ -25,8 +25,8 @@ select count(distinct(type_of_industry)) from dbo.Year_2019
 select count(distinct(type_of_industry)) from dbo.Year_2018
 
 
-## Creating View for all years 2018-2021
-# This includes Headcount, Profit, Profit change, Assets, Revenue, Revenue change and Percentage Profits in one single dataset
+# Creating View for all years 2018-2021
+## This includes Headcount, Profit, Profit change, Assets, Revenue, Revenue change and Percentage Profits in one single dataset
 
 create view vw_all as 
 
