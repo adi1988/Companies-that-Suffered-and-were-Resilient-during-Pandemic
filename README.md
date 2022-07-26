@@ -39,9 +39,9 @@ a.Profits Profits_2021,b.Profits Profits_2020 ,
 
 c.Profits Profits_2019,d.Profits Profits_2018, 
 
-(a.Profit_Change*100) Percentage_Profit_Change_2021, (b.Profit_Change*100) Profit_Change_2020,
+(a.Profit_Change '*' 100) Percentage_Profit_Change_2021, (b.Profit_Change '*' 100) Profit_Change_2020,
 
-(c.Profit_Change*100) Percentage_Profit_Change_2019, (d.Profit_Change*100) Profit_Change_2018,
+(c.Profit_Change '*' 100) Percentage_Profit_Change_2019, (d.Profit_Change '*' 100) Profit_Change_2018,
 
 a.Assets Assets_2021,b.Assets Assets_2020,
 
@@ -49,9 +49,9 @@ c.Assets Assets_2019,d.Assets Assets_2018,
 
 a.Revenues Revenues_2021,b.Revenues Revenues_2020,c.Revenues Revenues_2019,d.Revenues Revenues_2018,
 
-(a.Revenue_Change*100) Percentage_Revenue_Change_2021, (b.Revenue_Change*100) Percentage_Revenue_Change_2020,
+(a.Revenue_Change '*' 100) Percentage_Revenue_Change_2021, (b.Revenue_Change '*' 100) Percentage_Revenue_Change_2020,
 
-(c.Revenue_Change*100) Percentage_Revenue_Change_2019, (d.Revenue_Change*100) Percentage_Revenue_Change_2018
+(c.Revenue_Change '*' 100) Percentage_Revenue_Change_2019, (d.Revenue_Change '*' 100) Percentage_Revenue_Change_2018
 
 from dbo.Year_2021 a,dbo.Year_2020 b,dbo.Year_2019 c,dbo.Year_2018 d
 
