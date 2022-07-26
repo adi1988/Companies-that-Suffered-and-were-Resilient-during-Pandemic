@@ -13,7 +13,7 @@ Unique ID coloumn was created as "Company Name""Type of Industry" so as to be ab
 
 
 
-# Fortune1000 for years 2018-2021
+## Fortune1000 for years 2018-2021
 -- To find the count of the different type of industries for each year, around 233 rows are present in all, certain mismatch
 -- due to certain companies in 2018,2019 being acquired and dropped and certain new ones added in 2021
 
@@ -27,8 +27,8 @@ select count(distinct(type_of_industry)) from dbo.Year_2019
 select count(distinct(type_of_industry)) from dbo.Year_2018
 
 
-# Creating View for all years 2018-2021
-## Headcount, Profit, Profit change, Assets, Revenue, Revenue change, Percentage Profits -  in a single dataset
+## Creating View for all years 2018-2021
+### Headcount, Profit, Profit change, Assets, Revenue, Revenue change, Percentage Profits -  in a single dataset
 
 create view vw_all as 
 
@@ -67,7 +67,7 @@ where a.Unique_ID=b.Unique_ID and b.Unique_ID=c.Unique_ID and b.Unique_ID=d.Uniq
 
 
 
-## Explanation - 
+### Explanation - 
 count queries for both these show that there are 821 records, this means that from 2018-2021 there are 821 records which are recurring
 out of 1000, ~179 companies have discrepancy as some could have been acquired and merged since 2018,2019 and some could have formed new in 2021
 
