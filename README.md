@@ -104,4 +104,4 @@ https://github.com/adi1988/Companies-that-Suffered-and-were-Resilient-during-Pan
 
 # PDF -
 A pdf version of the different visualizations is also put to easily read (however this is not in interactive version)
-https://github.com/adi1988/Winners-and-Losers-Fortune-1000-companies-from-2018-2021/blob/main/Companies%20that%20Suffered%20and%20were%20Resilient%20during%20the%20Pandemic.pdf
+https://github.com/adi1988/Companies-that-Suffered-and-were-Resilient-during-Pandemic/blob/main/Companies%20that%20Suffered%20and%20were%20Resilient%20during%20the%20Pandemic.pdf
