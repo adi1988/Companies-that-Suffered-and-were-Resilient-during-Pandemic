@@ -102,7 +102,7 @@ having count(type_of_industry) > '1'
 To view the visualization dashboard go to Companies that Suffered and Prospered and open raw file. You must have PowerBI downloaded to view this
 https://github.com/adi1988/Companies-that-Suffered-and-were-Resilient-during-Pandemic/blob/main/Companies%20that%20Suffered%20and%20were%20Resilient%20during%20the%20Pandemic.pbix
 
-#### PowerBI need to have PowerBI installed and then view raw/download in PowerBI)
+#### PowerBI - need to have PowerBI installed and then view raw/download in PowerBI)
 
 
 # PDF -
